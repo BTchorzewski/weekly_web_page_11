@@ -22,3 +22,31 @@ body {
     
 }
 
+li {
+    list-style: none;
+}
+.navigation {
+    color: $color-white;
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: $tertiary-font;
+        
+    }
+    &__link {
+        padding: .5rem 1rem;
+        &:link,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;  
+            font-size: 1.4rem;
+            border: .2rem solid transparent;
+        }
+        &:hover, 
+        &:active {
+            border: .2rem solid $color-white;
+            border-radius: 10rem;
+        }
+    }
+}
+

@@ -1,0 +1,19 @@
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;  
+    &__list {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+}

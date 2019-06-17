@@ -1,7 +1,3 @@
-// utilities
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/utilities";
 @import "./utils/variables";
 
 // base
@@ -17,6 +13,10 @@
 // pages
 @import "./pages/home";
 
+// utilities
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/utilities";
 
 
 // @import "./vendors/*";

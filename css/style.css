@@ -1,3 +1,68 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #aeaeae; }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../../fonts/lato/Lato-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Chunkfive';
+  src: url(../../fonts/ChunkFive/Chunkfive.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'MontserratAlternates-Regular';
+  src: url(../../fonts/montserrate/MontserratAlternates-Regular.otf) format("opentype"); }
+
+body {
+  font-family: "Lato-regular", sans-serif;
+  font-size: 1.6rem; }
+
+li {
+  list-style: none; }
+
+.navigation {
+  color: #fff; }
+  .navigation__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "MontserratAlternates-Regular", sans-serif; }
+  .navigation__link {
+    padding: .5rem 1rem; }
+    .navigation__link:link, .navigation__link:visited {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      border: .2rem solid transparent; }
+    .navigation__link:hover, .navigation__link:active {
+      border: 0.2rem solid #fff;
+      border-radius: 10rem; }
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem; }
+  .navigation__list {
+    display: flex; }
+  .navigation__item:not(:last-child) {
+    margin-right: 1.5rem; }
+
 /*
 Choosen breakpoints:
 0 - 600px     37,5em  Phone 
@@ -15,31 +80,5 @@ Choosen breakpoints:
 
 1em === 16px
 */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: 'Lato-Regular';
-  src: url("../../fonts/lato/Lato-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'Chunkfive';
-  src: url(../../fonts/ChunkFive/Chunkfive.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'MontserratAlternates-Regular';
-  src: url(../../fonts/montserrate/MontserratAlternates-Regular.otf) format("opentype"); }
-
-body {
-  font-family: "Lato-regular", sans-serif;
-  font-size: 1.6rem; }
+.u-text-bold-medium {
+  font-weight: 700 !important; }
