@@ -1,0 +1,29 @@
+.button {
+    
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 40rem;
+        padding: 2rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: $color-black;
+        display: inline-block;
+    }
+    &:hover {
+        
+    }
+    &:active {
+
+    }
+    &--yellow {
+        background-color: $color-yellow-light;
+    }
+    &--aqua {
+        background-color: $color-primary-light;
+    }
+    &--lime {
+        background-color: $color-lime-ligth;
+    }
+}
