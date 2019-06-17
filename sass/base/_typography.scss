@@ -1,5 +1,24 @@
+// @font-face
+
+@font-face{
+    font-family: 'Lato-Regular';
+    src: url("../../fonts/lato/Lato-Regular.ttf") format('truetype');
+};
+
+@font-face{
+    font-family: 'Chunkfive';
+    src: url(../../fonts/ChunkFive/Chunkfive.otf) format('opentype');
+};
+
+@font-face{
+    font-family: 'MontserratAlternates-Regular';
+    src: url(../../fonts/montserrate/MontserratAlternates-Regular.otf) format('opentype');
+};
+
 body {
-    
+
+    font-family: $primary-font;
+    font-size: $default-font-size; 
     
 }
 

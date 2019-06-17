@@ -7,3 +7,4 @@
 **Status:** Development
 
 Projekt strony został udostępniony przez grupę "Weekly WebDev Challenge" na serwisie społecznościowym Facebook.
+Kodowanie pliku PSD do html/css

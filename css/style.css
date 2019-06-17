@@ -1,0 +1,45 @@
+/*
+Choosen breakpoints:
+0 - 600px     37,5em  Phone 
+600 - 900     56,25em  Tablets portrait
+900 - 1200    75em  Tablets landscape
+1200 - 1800     Normal styling
+1800 - +      112,5  Big desktop
+*/
+/*
+@breakpoint argument:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+1em === 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../../fonts/lato/Lato-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Chunkfive';
+  src: url(../../fonts/ChunkFive/Chunkfive.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'MontserratAlternates-Regular';
+  src: url(../../fonts/montserrate/MontserratAlternates-Regular.otf) format("opentype"); }
+
+body {
+  font-family: "Lato-regular", sans-serif;
+  font-size: 1.6rem; }
