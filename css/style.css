@@ -27,17 +27,33 @@ body {
 body {
   font-family: "Lato-regular", sans-serif;
   font-size: 1.6rem;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 li {
   list-style: none; }
 
 .primary-heading {
   font-size: 8rem;
-  text-align: center;
   text-transform: uppercase;
   font-family: "Chunkfive", sans-serif;
   font-weight: 400; }
+
+.secondary-heading {
+  font-size: 6rem;
+  font-family: "Chunkfive", sans-serif;
+  font-weight: 400;
+  color: #29d9c2;
+  margin-bottom: 2rem; }
+  .secondary-heading--left {
+    text-align: left; }
+
+.secondary-paragraph {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: #777; }
+  .secondary-paragraph--left {
+    text-align: left; }
 
 .navigation {
   color: #fff; }
@@ -86,6 +102,33 @@ li {
 .button--lime {
   background-color: #bdf271; }
 
+.regulation {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  max-width: 20rem;
+  position: absolute;
+  right: 10%;
+  transition: all .3s; }
+  .regulation > * {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .regulation:link, .regulation:visited {
+    text-decoration: none;
+    color: #aeaeae;
+    font-size: 1.6rem; }
+  .regulation:hover {
+    color: #777;
+    transform: translateY(-0.2rem); }
+  .regulation:hover > .regulation__icon {
+    fill: #777; }
+  .regulation__icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: #aeaeae;
+    margin-right: .5rem; }
+
 .navigation {
   position: absolute;
   top: 0;
@@ -116,6 +159,35 @@ li {
     left: 50%;
     transform: translateX(-50%); }
 
+.city {
+  background-color: #fff;
+  padding: 15rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .city__image-box {
+    flex: 0 0 30%;
+    margin-right: 9rem; }
+  .city__image {
+    max-width: 100%;
+    height: auto; }
+  .city__information {
+    flex: 0 0 30%;
+    padding: 2rem 0; }
+
+.destination {
+  background-color: #f2fefe;
+  padding: 8rem 0; }
+  .destination__header {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 10rem; }
+  .destination__heading {
+    width: 40%; }
+  .destination__paragraph {
+    width: 40%; }
+
 /*
 Choosen breakpoints:
 0 - 600px     37,5em  Phone 
@@ -135,6 +207,9 @@ Choosen breakpoints:
 */
 .u-text-bold-medium {
   font-weight: 700 !important; }
+
+.u-font-bold-small {
+  font-weight: 400 !important; }
 
 .u-text-color-primary-dark {
   color: #01a2a6 !important; }

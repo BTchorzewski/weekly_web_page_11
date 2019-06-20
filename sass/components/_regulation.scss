@@ -1,0 +1,38 @@
+
+.regulation {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    max-width: 20rem;
+    position: absolute;
+    right: 10%;
+    transition: all .3s;
+    & > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $color-grey-light;
+        font-size: 1.6rem;
+
+    }
+    &:hover {
+        color: $color-grey-dark; 
+        transform: translateY(-.2rem);
+        
+    }
+    &:hover > &__icon {
+        fill: $color-grey-dark;
+    }
+    &__icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: $color-grey-light;
+        margin-right: .5rem;
+        
+    }
+    
+}

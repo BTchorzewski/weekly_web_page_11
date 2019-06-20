@@ -20,6 +20,7 @@ body {
     font-family: $primary-font;
     font-size: $default-font-size; 
     color: $color-white;
+    text-align: center;
 }
 
 li {
@@ -28,14 +29,34 @@ li {
 
 .primary-heading {
     font-size: 8rem;
-    text-align: center;
     text-transform: uppercase;
     font-family: $secondary-font;
     font-weight: 400;
 }
 
+.secondary-heading {
+    font-size: 6rem;
+    font-family: $secondary-font;
+    font-weight: 400;
+    color: $color-primary-light;
+    margin-bottom: 2rem;
+
+    &--left {
+        text-align: left;
+    }
+}
 
 
+
+.secondary-paragraph {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: $color-grey-dark;
+    &--left {
+        text-align: left;
+    }
+    
+}
 
 .navigation {
     color: $color-white;
@@ -75,3 +96,4 @@ li {
         padding-bottom: 2rem;
     }
 }
+

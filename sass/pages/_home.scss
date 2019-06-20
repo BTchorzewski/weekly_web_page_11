@@ -1,0 +1,41 @@
+.city {
+    background-color: $color-white;
+    padding: 15rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__image-box {
+        
+        flex: 0 0 30%;
+        margin-right: 9rem;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__information {
+        flex: 0 0 30%;
+        padding: 2rem 0;
+    }
+}
+
+.destination {
+    background-color: $color-primary-ultralight;
+    padding: 8rem 0;
+    &__header {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        padding-left: 10rem;
+    }
+
+    &__heading {
+        width: 40%;
+    }
+
+    &__paragraph { 
+        width: 40%;
+    }
+}
