@@ -1,0 +1,145 @@
+.place {
+    display: flex;
+    align-items: stretch;
+    text-align: left;
+    margin: 1rem;
+
+    &--big {
+        flex: 1 1 100%;
+        justify-content: flex-end;
+        
+    }
+
+    &--medium {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        flex: 0 1 60%;
+    }
+
+    &--small {
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 auto;
+    }
+
+    &__link {
+        align-self: flex-end;
+        margin: 0 1rem 1rem 0;
+        &:link,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+
+    &__content {
+        flex: 0 1 40%;
+        padding: 4rem;
+        background-color: rgba($color-white, .9)
+    }
+    
+
+    &__icon {
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+        color: $color-primary-light;
+        font-weight: 300;
+        font-size: 3rem;
+    }
+
+    &__text {
+        color: $color-grey-dark;
+        font-weight: 400;
+    }
+}
+
+// hiding content in small components
+.place--small {
+    position: relative;
+    .place__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        padding: 0;
+        background-color: rgba($color-white, .9)
+    }
+    .place__icon {
+        margin-bottom: 0;
+        
+    }
+
+    .place__title {
+        display: none;
+    }
+
+    .place__text {
+        display: none;
+    }
+    .place__link {
+        align-self: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+// background image settings
+.place {
+    &--img-1 {
+        background-image: url(../../assets/image-2_large.png);
+        background-size: cover;
+    }
+    &--img-2 {
+        background-image: url(../../assets/image-3_large.png);
+        background-size: cover;
+    }
+    &--img-3 {
+        background-image: url(../../assets/image-4_large.png);
+        background-size: cover;
+    }
+}
+
+
+// left triangle
+.place--right {
+    .place__content {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -1rem;
+            width: 0; 
+            height: 0; 
+            border-top: 1rem solid transparent; 
+            border-right: 1rem solid rgba($color-white, .9); 
+            border-bottom: 1rem solid transparent;
+            
+        }
+    }
+}
+
+// right triangle
+.place--left {
+    .place__content {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -1rem;
+            width: 0; 
+            height: 0; 
+            border-top: 1rem solid transparent; 
+            border-left: 1rem solid rgba($color-white, .9); 
+            border-bottom: 1rem solid transparent;
+            
+        }
+    }
+}

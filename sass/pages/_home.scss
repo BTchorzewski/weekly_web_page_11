@@ -23,9 +23,8 @@
 
 .destination {
     background-color: $color-primary-ultralight;
-    padding: 8rem 0;
+    padding: 8rem 10rem;
     &__header {
-        position: relative;
         display: flex;
         flex-flow: column wrap;
         padding-left: 10rem;
@@ -38,4 +37,18 @@
     &__paragraph { 
         width: 40%;
     }
-}
+
+    &__navigation {
+        margin-top: 3rem;
+        padding: 2rem 6rem; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__places-box {
+        padding: 1rem 5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}   

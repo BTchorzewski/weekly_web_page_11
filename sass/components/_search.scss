@@ -1,0 +1,32 @@
+.search {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    
+    &__input {
+        border: 1px solid $color-grey-ultralight;
+        border-radius: 80rem;
+        background-color: $color-white;
+        padding: 1.4rem 0 1.4rem 4rem;
+        font-size: 1.6rem;
+        color: $color-grey-dark-2;
+        &:focus {
+            background-color: $color-grey-ultralight; 
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        margin-right: -3.5rem;
+        padding: 1.4rem 0;
+        cursor: pointer;
+    }
+
+    &__icon {
+        height: 1.7rem;
+        width: 1.7rem;
+        fill: $color-grey-dark-2;
+    }
+}

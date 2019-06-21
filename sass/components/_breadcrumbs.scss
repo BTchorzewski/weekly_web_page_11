@@ -1,0 +1,26 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    &__item {
+        &:link,
+        &:visited {
+            color: $color-grey-light;
+            font-size: 1.6rem;
+            text-decoration: none;
+            text-transform: uppercase;
+
+        }
+        &:not(:last-child)::after {
+            content: "/";
+            margin: 0 1rem;
+        }
+        &--start {
+            &:link,
+            &:visited {
+                color: $color-grey-dark;
+                font-weight: 900;
+            }
+            
+        }
+    }
+}
