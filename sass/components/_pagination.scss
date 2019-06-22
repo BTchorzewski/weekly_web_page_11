@@ -1,20 +1,57 @@
 .pagination {
-    &__begin-list {
-
-    }
-    &__prev-page {
-
-    }
-    &__number { 
-
-        &--present {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    &__number {
+        display: flex;
+        align-items: center; 
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-grey-light-2;
+        }
+        &:hover {
+            color: $color-primary-dark;
+        }
+        &:not(:last-child) {
+            margin-right: .5rem;
         }
     }
-    &__next-page {
-
+    &__number--present {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+            color: $color-primary-dark;
+            font-size: 1.8rem;
+        }
     }
-    &__end-list {
 
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: $color-grey-light-2;
+        &:hover {
+            fill: $color-primary-dark;
+        }
+    }
+
+    &__begin-list {
+        visibility: hidden;
+        order: -5;
+    }
+    &__prev-page {
+        visibility: hidden;
+        order: -4;
+    }
+    // if item has class="pagination__number--present" and is not a first page then show lelements to navigate previous pages;
+    &__number[class$='present']:not(:first-child)  ~ &__begin-list {
+        visibility: visible;
+        
+    }
+
+    &__number[class$='present']:not(:first-child)  ~ &__prev-page {
+        visibility: visible;
     }
 }
