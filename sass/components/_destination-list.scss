@@ -1,0 +1,10 @@
+.destination-list {
+    background-color: transparent;
+    &__header {}
+    &__title {}
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -12,7 +12,9 @@
     }
 
     &__title {
-
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: $color-white;
     }
 
     &__day {
@@ -24,11 +26,11 @@
         padding: 1rem 0;
     }
     &__day-number {
-        color: #29d9c2;
+        color: $color-primary-light;
     }
     &__calendar {
         border: none;
-        color: #29d9c2;
+        color: $color-primary-light;
         background-color: transparent;
     }
 

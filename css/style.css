@@ -171,6 +171,29 @@ li {
     width: 1.7rem;
     fill: #5d5c5c; }
 
+.search-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1; }
+  .search-secondary__input {
+    background-color: gray;
+    border: .1rem solid transparent;
+    padding: .5rem;
+    transition: all 1s; }
+    .search-secondary__input:hover, .search-secondary__input:focus {
+      border: .1rem solid red; }
+  .search-secondary__button {
+    border: none;
+    background-color: transparent;
+    margin-left: -2.5rem;
+    flex: 0 0 auto;
+    cursor: pointer; }
+  .search-secondary__icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    fill: #5d5c5c; }
+
 .place {
   display: flex;
   align-items: stretch;
@@ -315,6 +338,10 @@ li {
     background-image: url(../../assets/form-large.png);
     background-size: cover;
     height: 5.5rem; }
+  .schedule__title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff; }
   .schedule__day {
     padding: 2rem; }
   .schedule__day-header {
@@ -331,6 +358,13 @@ li {
     background-color: #f4e79d;
     padding: 2rem;
     border: 0.2rem dashed #aeaeae; }
+
+.destination-list {
+  background-color: transparent; }
+  .destination-list__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 .navigation {
   position: absolute;
@@ -417,7 +451,6 @@ li {
     height: 50rem; }
   .itinerary__destinations {
     flex: 0 1 40%;
-    background-color: yellowgreen;
     height: 50rem; }
 
 /*
