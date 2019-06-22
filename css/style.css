@@ -304,6 +304,34 @@ li {
   .pagination__number[class$='present']:not(:first-child) ~ .pagination__prev-page {
     visibility: visible; }
 
+.schedule {
+  background-color: #ffffa6;
+  border-radius: .3rem;
+  overflow: hidden; }
+  .schedule__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/form-large.png);
+    background-size: cover;
+    height: 5.5rem; }
+  .schedule__day {
+    padding: 2rem; }
+  .schedule__day-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0; }
+  .schedule__day-number {
+    color: #29d9c2; }
+  .schedule__calendar {
+    border: none;
+    color: #29d9c2;
+    background-color: transparent; }
+  .schedule__provider {
+    background-color: #f4e79d;
+    padding: 2rem;
+    border: 0.2rem dashed #aeaeae; }
+
 .navigation {
   position: absolute;
   top: 0;
@@ -386,7 +414,6 @@ li {
   .itinerary__schedule {
     flex: 0 1 40%;
     margin-right: 2rem;
-    background-color: orangered;
     height: 50rem; }
   .itinerary__destinations {
     flex: 0 1 40%;

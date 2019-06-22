@@ -1,0 +1,40 @@
+.schedule {
+    background-color: $color-yellow-light;
+    border-radius: .3rem;
+    overflow: hidden;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../assets/form-large.png);
+        background-size: cover;
+        height: 5.5rem;
+    }
+
+    &__title {
+
+    }
+
+    &__day {
+        padding: 2rem;
+    }
+    &__day-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    &__day-number {
+        color: #29d9c2;
+    }
+    &__calendar {
+        border: none;
+        color: #29d9c2;
+        background-color: transparent;
+    }
+
+    &__provider {
+        background-color: $color-yellow-dark;
+        padding: 2rem;
+        border: .2rem dashed $color-grey-light;
+    }
+}
