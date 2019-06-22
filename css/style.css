@@ -373,6 +373,26 @@ li {
     display: flex;
     flex-wrap: wrap; }
 
+.itinerary {
+  background-color: #fff;
+  padding: 7rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .itinerary__title {
+    flex: 1 1 100%; }
+  .itinerary__text {
+    flex: 1 1 100%; }
+  .itinerary__schedule {
+    flex: 0 1 40%;
+    margin-right: 2rem;
+    background-color: orangered;
+    height: 50rem; }
+  .itinerary__destinations {
+    flex: 0 1 40%;
+    background-color: yellowgreen;
+    height: 50rem; }
+
 /*
 Choosen breakpoints:
 0 - 600px     37,5em  Phone 

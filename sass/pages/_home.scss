@@ -52,3 +52,28 @@
         flex-wrap: wrap;
     }
 }   
+
+.itinerary {
+    background-color: $color-white;
+    padding: 7rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    &__title {
+        flex: 1 1 100%;
+    }
+    &__text {
+        flex: 1 1 100%;
+    }
+    &__schedule {
+        flex: 0 1 40%;
+        margin-right: 2rem;
+        background-color: orangered; // only for testing purpose
+        height: 50rem; // only for testing purpose
+    }
+    &__destinations {
+        flex: 0 1 40%;
+        background-color: yellowgreen; // only for testing purpose
+        height: 50rem; // only for testing purpose
+    }
+}
