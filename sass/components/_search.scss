@@ -34,25 +34,37 @@
 .search-secondary {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex: 0 1 40%;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    flex: 1 1 50%;
     &__input {
-        background-color: gray;
         border: .1rem solid transparent;
         padding: .5rem;
-        transition: all 1s;
+        transition: all .3s ease-in;
+        flex: 0 0 auto;
+        width: 5rem;
         &:hover,
         &:focus {
-            border: .1rem solid red;
+            background-color: lighten($color-grey-light, 15%);
+            width: 90%;
+            border-radius: .5rem;
         }
     }
 
     &__button {
         border: none;
         background-color: transparent;
-        margin-left: -2.5rem;
+        margin-left: -2rem;
+        z-index: 4;
         flex: 0 0 auto;
         cursor: pointer;
+
+    }
+
+    &__button:hover ~ &__input {
+        background-color: lighten($color-grey-light, 15%);
+        border-radius: .5rem;
+        width: 90%
     }
 
     &__icon {
