@@ -170,12 +170,17 @@
                         <h4 class="destination-list__title">List of Destination</h4>
                     </header>
                     <form action="" class="destination-list__form">
-                        <select name="destination-list" id="">
-                            <option value="Mountain">Mountain</option>
-                            <option value="River">River</option>
-                            <option value="Forest">Forest</option>
-                            <option value="Valley">Valley</option>
-                        </select>
+                        <label for="destination-list" class="destination-list__label">
+                            sort by:
+                            <select id="destination-list" class="destination-list__select" name="destination-list" id="">
+                                <option class="destination-list__option" default value="Mountain">Mountain</option>
+                                <option class="destination-list__option" value="River">River</option>
+                                <option class="destination-list__option" value="Forest">Forest</option>
+                                <option class="destination-list__option" value="Valley">Valley</option>
+                                
+                            </select>
+                        </label>
+                        
                         <span class="search-secondary">
                             <input type="text" class="search-secondary__input">
                             <button class="search-secondary__button">

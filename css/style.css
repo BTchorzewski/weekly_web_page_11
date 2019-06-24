@@ -175,7 +175,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex: 1; }
+  flex: 0 1 40%; }
   .search-secondary__input {
     background-color: gray;
     border: .1rem solid transparent;
@@ -360,11 +360,45 @@ li {
     border: 0.2rem dashed #aeaeae; }
 
 .destination-list {
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 2rem; }
+  .destination-list__header {
+    margin-bottom: 2rem; }
+  .destination-list__title {
+    color: #29d9c2;
+    font-size: 1.8rem;
+    font-weight: 900;
+    display: inline-block;
+    position: relative; }
+    .destination-list__title:after {
+      content: "";
+      display: inline-block;
+      background-color: #29d9c2;
+      height: .3rem;
+      width: 55%; }
   .destination-list__form {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    background-color: #fff; }
+  .destination-list__label {
+    color: #29d9c2; }
+  .destination-list__select {
+    color: #aeaeae;
+    border: none;
+    padding: 1rem 1.2rem 1rem 0;
+    margin-right: -.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: inherit;
+    position: relative;
+    background-image: url(../../assets/select-icon.png);
+    background-repeat: no-repeat;
+    background-position: right center; }
+  .destination-list__option {
+    background-color: inherit;
+    outline: none; }
 
 .navigation {
   position: absolute;

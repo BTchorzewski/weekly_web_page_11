@@ -1,10 +1,52 @@
 .destination-list {
     background-color: transparent;
-    &__header {}
-    &__title {}
+    padding: 2rem;
+    &__header {
+        margin-bottom: 2rem;
+    }
+    &__title {
+        color: $color-primary-light;
+        font-size: 1.8rem;
+        font-weight: 900;
+        display: inline-block;
+        
+        position: relative;
+        &:after {
+            content: "";
+            display: inline-block;
+            background-color: $color-primary-light;
+            height: .3rem;
+            width: 55%;
+
+        }
+    }
     &__form {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: $color-white;
+    }
+    &__label {
+        color: $color-primary-light;
+        
+    }
+    &__select {
+        color: $color-grey-light;
+        border: none;
+        padding: 1rem 1.2rem 1rem 0;
+        margin-right: -.5rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: inherit;
+        position: relative;
+        background-image: url(../../assets/select-icon.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+    &__option {
+        background-color: inherit;
+        outline: none;
+        
     }
 }
