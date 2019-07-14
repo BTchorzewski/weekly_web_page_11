@@ -67,13 +67,19 @@
         flex: 1 1 100%;
         
     }
+    &__box {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        padding: 5rem;
+    }
     &__schedule {
-        flex: 0 1 40%;
+        flex: 0 0 50%;
         margin-right: 2rem;
         height: 50rem; // only for testing purpose
     }
     &__destinations {
-        flex: 0 1 40%;
+        flex: 0 0 50%;
         height: 50rem; // only for testing purpose
     }
 }

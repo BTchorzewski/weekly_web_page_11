@@ -1,0 +1,65 @@
+.spot {
+    max-width: 43rem; //only for testing purpouse
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: .1rem solid rgba($color-black, .3);
+    padding: 1rem;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    &__information {
+        flex: 1 0 40%;
+        text-align: left;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    &__time {
+        font-size: 1.4rem;
+    }
+
+    &__hours {
+        font-size: 1.4rem;
+        display: none;
+    }
+
+    &__icon-box {
+        align-self: stretch;
+        flex: 0 0 25%;
+        padding: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 100%;
+        display: block;
+    }
+
+    &__caption {
+            
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        text-decoration: none;
+        
+    }
+
+    &__notes {
+        display: none;
+    }
+
+    &__note {}
+}

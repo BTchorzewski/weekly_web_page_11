@@ -201,7 +201,7 @@ li {
   .search-secondary__icon {
     height: 1.7rem;
     width: 1.7rem;
-    fill: #5d5c5c; }
+    fill: #aeaeae; }
 
 .place {
   display: flex;
@@ -409,6 +409,47 @@ li {
     background-color: inherit;
     outline: none; }
 
+.spot {
+  max-width: 43rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  padding: 1rem; }
+  .spot:not(:last-child) {
+    margin-bottom: 2rem; }
+  .spot__information {
+    flex: 1 0 40%;
+    text-align: left;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .spot__title {
+    font-size: 1.8rem;
+    font-weight: 300; }
+  .spot__time {
+    font-size: 1.4rem; }
+  .spot__hours {
+    font-size: 1.4rem;
+    display: none; }
+  .spot__icon-box {
+    align-self: stretch;
+    flex: 0 0 25%;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .spot__icon {
+    width: 100%;
+    display: block; }
+  .spot__link {
+    font-size: 1.4rem;
+    text-decoration: none; }
+  .spot__notes {
+    display: none; }
+
 .navigation {
   position: absolute;
   top: 0;
@@ -488,12 +529,17 @@ li {
     flex: 1 1 100%; }
   .itinerary__text {
     flex: 1 1 100%; }
+  .itinerary__box {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 5rem; }
   .itinerary__schedule {
-    flex: 0 1 40%;
+    flex: 0 0 50%;
     margin-right: 2rem;
     height: 50rem; }
   .itinerary__destinations {
-    flex: 0 1 40%;
+    flex: 0 0 50%;
     height: 50rem; }
 
 /*
@@ -521,6 +567,9 @@ Choosen breakpoints:
 
 .u-text-color-primary-dark {
   color: #01a2a6 !important; }
+
+.u-text-color-primary-light {
+  color: #29d9c2 !important; }
 
 .u-text-color-white {
   color: #fff !important; }
