@@ -1,21 +1,31 @@
 .button {
-    
+    &,    
     &:link,
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
+        border: none;
         border-radius: 40rem;
         padding: 2rem;
         font-size: 1.6rem;
         line-height: 2rem;
-        color: $color-black;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
+    
     &:hover {
-        
+        transform: translateY(-.2rem);
+        box-shadow: 0 .4rem 5rem rgba($color-black, .3);
+
     }
     &:active {
-
+        transform: translateY(0);
+        box-shadow: 0 .1rem .5rem rgba($color-black, .6);
+    }
+    &::-moz-focus-inner {
+        border: none;
     }
     &--yellow {
         background-color: $color-yellow-light;
@@ -25,5 +35,19 @@
     }
     &--lime {
         background-color: $color-lime-ligth;
+    }
+    &--text-black {
+        color: $color-black;
+    }
+    &--text-white {
+        color: $color-white;
+        & > svg {
+            fill: currentColor;
+        }
+    }
+    &__icon {
+        height: 1.8rem;
+        width: 1.8rem;
+        margin-right: 1.5rem;
     }
 }

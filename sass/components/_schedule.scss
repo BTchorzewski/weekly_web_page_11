@@ -1,7 +1,7 @@
 .schedule {
     background-color: $color-yellow-light;
     border-radius: .3rem;
-    overflow: hidden;
+    height: auto;
     &__header {
         display: flex;
         align-items: center;
@@ -35,7 +35,7 @@
     }
 
     &__provider {
-        background-color: $color-yellow-dark;
+        background-color: #fbf6a3;
         padding: 2rem;
         border: .2rem dashed $color-grey-light;
     }

@@ -74,12 +74,44 @@
         padding: 5rem;
     }
     &__schedule {
-        flex: 0 0 50%;
+        flex: 0 0 70%;
         margin-right: 2rem;
-        height: 50rem; // only for testing purpose
+        
     }
     &__destinations {
-        flex: 0 0 50%;
-        height: 50rem; // only for testing purpose
+        flex: 0 0 70%;
+        
     }
+    &__printable {
+        background-color: $color-white;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 15rem 5rem;
+    background-image: url(../../assets/map-large.png);
+    background-size: cover;
+    box-shadow: inset 100rem 100rem rgba($color-primary-dark, .6);
+
+    &__title {
+        flex: 1 0 100%;
+        
+    }
+
+    &__form {
+        flex: 0 0 35%;
+    }
+
+    &__or {
+
+    }
+
+    &__description {flex: 0 0 45%;}
 }

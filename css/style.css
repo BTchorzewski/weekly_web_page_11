@@ -33,6 +33,10 @@ body {
 li {
   list-style: none; }
 
+.icon {
+  width: 1.5rem;
+  height: 1.5rem; }
+
 .primary-heading {
   font-size: 8rem;
   text-transform: uppercase;
@@ -44,7 +48,6 @@ li {
   font-size: 6rem;
   font-family: "Chunkfive", sans-serif;
   font-weight: 400;
-  color: #29d9c2;
   margin-bottom: 2rem; }
   .secondary-heading--left {
     text-align: left; }
@@ -85,15 +88,29 @@ li {
   .header__text {
     padding-bottom: 2rem; }
 
-.button:link, .button:visited {
+.button, .button:link, .button:visited {
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
   border-radius: 40rem;
   padding: 2rem;
   font-size: 1.6rem;
   line-height: 2rem;
-  color: #000;
-  display: inline-block; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+.button:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.4rem 5rem rgba(0, 0, 0, 0.3); }
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.6); }
+
+.button::-moz-focus-inner {
+  border: none; }
 
 .button--yellow {
   background-color: #ffffa6; }
@@ -103,6 +120,19 @@ li {
 
 .button--lime {
   background-color: #bdf271; }
+
+.button--text-black {
+  color: #000; }
+
+.button--text-white {
+  color: #fff; }
+  .button--text-white > svg {
+    fill: currentColor; }
+
+.button__icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-right: 1.5rem; }
 
 .regulation {
   display: flex;
@@ -339,7 +369,7 @@ li {
 .schedule {
   background-color: #ffffa6;
   border-radius: .3rem;
-  overflow: hidden; }
+  height: auto; }
   .schedule__header {
     display: flex;
     align-items: center;
@@ -364,7 +394,7 @@ li {
     color: #29d9c2;
     background-color: transparent; }
   .schedule__provider {
-    background-color: #f4e79d;
+    background-color: #fbf6a3;
     padding: 2rem;
     border: 0.2rem dashed #aeaeae; }
 
@@ -410,45 +440,152 @@ li {
     outline: none; }
 
 .spot {
-  max-width: 43rem;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  padding: 1rem; }
+  flex-direction: column; }
   .spot:not(:last-child) {
     margin-bottom: 2rem; }
+  .spot__cta {
+    background-color: #fff;
+    display: flex;
+    padding: 1rem;
+    border: 0.1rem solid rgba(174, 174, 174, 0.4);
+    border-radius: .5rem;
+    position: relative;
+    z-index: 10; }
   .spot__information {
-    flex: 1 0 40%;
     text-align: left;
-    margin-right: auto;
+    align-self: stretch;
+    display: flex; }
+  .spot__title {
+    font-size: 2.2rem;
+    font-weight: 200; }
+  .spot__time, .spot__hours {
+    font-size: 1.4rem; }
+  .spot__icon-box {
+    flex: 0 1 15%; }
+  .spot__icon {
+    width: 100%;
+    display: inline-block; }
+  .spot__link {
+    text-decoration: none;
+    font-size: 1.4rem; }
+  .spot__notes {
+    width: 95%;
+    margin-right: .5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
-  .spot__title {
-    font-size: 1.8rem;
-    font-weight: 300; }
-  .spot__time {
-    font-size: 1.4rem; }
-  .spot__hours {
+    align-self: flex-end; }
+  .spot__note {
+    padding: .5rem 0 .5rem 1.5rem;
+    margin-top: -.4rem;
+    background-color: #f5e99e;
+    border-radius: .5rem;
     font-size: 1.4rem;
-    display: none; }
-  .spot__icon-box {
-    align-self: stretch;
-    flex: 0 0 25%;
-    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start; }
+    .spot__note:first-of-type {
+      padding-top: 1rem; }
+    .spot__note:last-of-type {
+      padding-bottom: 1.2rem; }
+    .spot__note:not(:last-of-type)::after {
+      content: "";
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+      margin-top: 1.5rem;
+      border-bottom: 0.1rem solid #fbf6a3; }
+  .spot__btn-add:link, .spot__btn-add:visited {
+    padding: .5rem 1.5rem;
+    margin-top: -.4rem;
+    border-radius: .5rem;
+    background-color: #f5e99e;
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgba(119, 119, 119, 0.4);
+    display: flex;
     align-items: center; }
-  .spot__icon {
-    width: 100%;
-    display: block; }
-  .spot__link {
-    font-size: 1.4rem;
-    text-decoration: none; }
-  .spot__notes {
+  .spot__btn-add:hover {
+    color: rgba(119, 119, 119, 0.8); }
+  .spot__btn-add-icon {
+    height: 1.4rem;
+    width: 1.4rem;
+    fill: rgba(119, 119, 119, 0.4);
+    margin-left: .5rem; }
+  .spot__btn-add:hover .spot__btn-add-icon {
+    fill: rgba(119, 119, 119, 0.8); }
+
+.spots .spot:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.spots .spot__cta {
+  justify-content: space-between;
+  align-items: center; }
+
+.spots .spot__information {
+  flex-direction: column;
+  justify-content: space-around; }
+
+.spots .spot__hours {
+  display: none; }
+
+.spots .spot__notes {
+  display: none; }
+
+.schedule__day .spot:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.schedule__day .spot__cta {
+  justify-content: space-between; }
+
+.schedule__day .spot__information {
+  flex: 1 0 60%;
+  justify-content: space-between;
+  align-items: center; }
+
+.schedule__day .spot__time {
+  display: none; }
+
+.schedule__day .spot__hours {
+  display: inline; }
+
+.schedule__day .spot__icon-box {
+  order: -1;
+  margin-right: 2rem; }
+
+.schedule__day .spot__caption {
+  display: none; }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  color: #5d5c5c;
+  padding: 2rem; }
+  .form__label {
     display: none; }
+  .form__input {
+    padding: 1.2rem 2.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem; }
+  .form__input:nth-of-type(1) {
+    flex: 0 0 100%; }
+  .form__input:nth-of-type(2) {
+    flex: 0 1 48%;
+    margin-right: auto; }
+  .form__input:nth-of-type(3) {
+    flex: 0 1 48%; }
+  .form__textarea {
+    flex: 0 0 100%;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    padding: 1.2rem 2.6rem;
+    font-size: 1.4rem;
+    font-family: "Lato-regular", sans-serif; }
+
+::placeholder {
+  color: #5d5c5c; }
 
 .navigation {
   position: absolute;
@@ -535,12 +672,31 @@ li {
     margin-top: 3rem;
     padding: 5rem; }
   .itinerary__schedule {
-    flex: 0 0 50%;
-    margin-right: 2rem;
-    height: 50rem; }
+    flex: 0 0 70%;
+    margin-right: 2rem; }
   .itinerary__destinations {
-    flex: 0 0 50%;
-    height: 50rem; }
+    flex: 0 0 70%; }
+  .itinerary__printable {
+    background-color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end; }
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 15rem 5rem;
+  background-image: url(../../assets/map-large.png);
+  background-size: cover;
+  box-shadow: inset 100rem 100rem rgba(1, 162, 166, 0.6); }
+  .contact__title {
+    flex: 1 0 100%; }
+  .contact__form {
+    flex: 0 0 35%; }
+  .contact__description {
+    flex: 0 0 45%; }
 
 /*
 Choosen breakpoints:
@@ -562,8 +718,11 @@ Choosen breakpoints:
 .u-text-bold-medium {
   font-weight: 700 !important; }
 
-.u-font-bold-small {
+.u-text-bold-small {
   font-weight: 400 !important; }
+
+.u-text-center {
+  text-align: center !important; }
 
 .u-text-color-primary-dark {
   color: #01a2a6 !important; }
@@ -576,3 +735,12 @@ Choosen breakpoints:
 
 .u-margin-top-medium {
   margin-top: 3rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-right-small {
+  margin-right: 1.5rem !important; }
+
+.u-margin-left-auto {
+  margin-left: auto !important; }

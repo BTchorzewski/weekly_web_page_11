@@ -16,7 +16,6 @@
 };
 
 body {
-
     font-family: $primary-font;
     font-size: $default-font-size; 
     color: $color-grey-dark;
@@ -25,6 +24,11 @@ body {
 
 li {
     list-style: none;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .primary-heading {
@@ -39,9 +43,8 @@ li {
     font-size: 6rem;
     font-family: $secondary-font;
     font-weight: 400;
-    color: $color-primary-light;
     margin-bottom: 2rem;
-
+    
     &--left {
         text-align: left;
     }
