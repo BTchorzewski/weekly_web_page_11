@@ -50,4 +50,8 @@
         width: 1.8rem;
         margin-right: 1.5rem;
     }
+    &--right {
+        grid-column: 4 / 5;
+        
+    }
 }

@@ -93,8 +93,8 @@
 .contact {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
+    align-items: center;
     padding: 15rem 5rem;
     background-image: url(../../assets/map-large.png);
     background-size: cover;
@@ -106,7 +106,7 @@
     }
 
     &__form {
-        flex: 0 0 35%;
+        flex: 0 0 45%;
     }
 
     &__or {
