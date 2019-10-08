@@ -36,6 +36,8 @@ li {
 .icon {
   width: 1.5rem;
   height: 1.5rem; }
+  .icon--white {
+    fill: #fff; }
 
 .primary-heading {
   font-size: 8rem;

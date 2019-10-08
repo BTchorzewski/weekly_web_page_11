@@ -29,6 +29,9 @@ li {
 .icon {
     width: 1.5rem;
     height: 1.5rem;
+    &--white {
+        fill: $color-white;
+    }
 }
 
 .primary-heading {
@@ -102,3 +105,7 @@ li {
     }
 }
 
+
+.contact {
+    
+}
