@@ -94,7 +94,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-content: center;
     padding: 15rem 5rem;
     background-image: url(../../assets/map-large.png);
     background-size: cover;
@@ -106,15 +106,15 @@
     }
 
     &__form {
-        flex: 0 0 45%;
+        flex: 0 0 40%;
     }
 
     &__or {
-
+        align-self: center;
     }
 
     &__description {
-        flex: 0 0 45%;
+        flex: 0 0 40%;
         
     }
     

@@ -1,9 +1,63 @@
 .description {
-    &__title {}
-    &__list {}
-    &__item {}
-    &__icon {}
-    &__phone-number {}
-    &__address {}
-    &__link {}
+    display: flex;
+    flex-direction: column;
+    &__title {
+        font-family: $primary-font;
+        font-size: 4.4rem;
+        font-weight: 200;
+        text-align: left;
+        margin-bottom: 4.3rem;
+    }
+    &__list {
+
+    }
+    &__item {
+        display: flex;
+        padding: .4rem;
+
+        &:first-child {
+            // styling icon in the first element of list 
+            .description__icon {
+                align-self: flex-start;
+                transform: translateY(50%);                
+            }
+        }
+               
+    }
+
+
+    &__cta {
+      
+    }
+
+    &__icon {
+        width: 1.2rem;
+        height: 1.1rem;
+        fill: $color-white;
+        margin-right: .5rem;
+        align-self: center;
+        
+    }
+    &__phone-number {
+
+    }
+
+    &__address {
+        
+    }
+    &__link {
+        display: block;
+        text-align: left;
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+            color: $color-lime;
+            font-family: inherit;
+            font-weight: 300;
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+
+    }
 }

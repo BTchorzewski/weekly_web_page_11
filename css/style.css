@@ -600,6 +600,37 @@ li {
 ::placeholder {
   color: #5d5c5c; }
 
+.description {
+  display: flex;
+  flex-direction: column; }
+  .description__title {
+    font-family: "Lato-regular", sans-serif;
+    font-size: 4.4rem;
+    font-weight: 200;
+    text-align: left;
+    margin-bottom: 4.3rem; }
+  .description__item {
+    display: flex;
+    padding: .4rem; }
+    .description__item:first-child .description__icon {
+      align-self: flex-start;
+      transform: translateY(50%); }
+  .description__icon {
+    width: 1.2rem;
+    height: 1.1rem;
+    fill: #fff;
+    margin-right: .5rem;
+    align-self: center; }
+  .description__link {
+    display: block;
+    text-align: left; }
+    .description__link:link, .description__link:visited, .description__link:hover, .description__link:active {
+      color: #c3f37f;
+      font-family: inherit;
+      font-weight: 300;
+      font-size: 1.6rem;
+      text-decoration: none; }
+
 .navigation {
   position: absolute;
   top: 0;
@@ -699,7 +730,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
   padding: 15rem 5rem;
   background-image: url(../../assets/map-large.png);
   background-size: cover;
@@ -707,9 +738,11 @@ li {
   .contact__title {
     flex: 1 0 100%; }
   .contact__form {
-    flex: 0 0 45%; }
+    flex: 0 0 40%; }
+  .contact__or {
+    align-self: center; }
   .contact__description {
-    flex: 0 0 45%; }
+    flex: 0 0 40%; }
 
 /*
 Choosen breakpoints:
