@@ -631,6 +631,31 @@ li {
       font-size: 1.6rem;
       text-decoration: none; }
 
+.subscription {
+  height: 8.3rem;
+  display: flex;
+  overflow: hidden;
+  border-radius: .5rem;
+  margin-right: 10rem; }
+  .subscription__input {
+    height: inherit;
+    width: 40rem;
+    padding-left: 1rem;
+    border: 0.1rem solid #01a2a6;
+    border-radius: .3rem; }
+  .subscription__button {
+    height: inherit;
+    width: 8.3rem;
+    background-color: #01a2a6;
+    border: none;
+    border-radius: 0 .3rem .3rem 0;
+    transform: translateX(-0.4rem);
+    outline: none; }
+  .subscription__icon {
+    width: 1.7rem;
+    height: 2.9rem;
+    fill: #fff; }
+
 .navigation {
   position: absolute;
   top: 0;

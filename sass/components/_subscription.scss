@@ -1,0 +1,32 @@
+.subscription {
+    
+    height: 8.3rem;
+    display: flex;
+    overflow: hidden;
+    border-radius: .5rem;
+
+    margin-right: 10rem; //right margin is used to push element to left;
+    &__input {
+        height: inherit;
+        width: 40rem;
+        padding-left: 1rem;
+        border: .1rem solid $color-primary-dark;
+        border-radius: .3rem;
+    }
+    &__button {
+        
+        height: inherit;
+        width: 8.3rem;
+        background-color: $color-primary-dark;
+        border: none;
+        border-radius: 0 .3rem .3rem 0;
+        transform: translateX(-.4rem);
+        outline: none;    
+    }
+    &__icon {
+        width: 1.7rem;
+        height: 2.9rem;
+        fill: $color-white;
+        
+    }
+}
