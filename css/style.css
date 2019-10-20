@@ -744,6 +744,14 @@ li {
   .contact__description {
     flex: 0 0 40%; }
 
+.touch {
+  height: 30rem;
+  padding: 5rem;
+  background-image: linear-gradient(60deg, #bdf271 50%, #b1e568 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 /*
 Choosen breakpoints:
 0 - 600px     37,5em  Phone 
@@ -769,6 +777,12 @@ Choosen breakpoints:
 
 .u-text-center {
   text-align: center !important; }
+
+.u-text-left {
+  text-align: left !important; }
+
+.u-text-right {
+  text-align: right !important; }
 
 .u-text-color-primary-dark {
   color: #01a2a6 !important; }

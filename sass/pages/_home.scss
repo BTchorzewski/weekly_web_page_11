@@ -119,3 +119,12 @@
     }
     
 }
+
+.touch {
+    height: 30rem;
+    padding: 5rem;
+    background-image: linear-gradient(60deg, #bdf271 50%, $color-lime-dark 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
