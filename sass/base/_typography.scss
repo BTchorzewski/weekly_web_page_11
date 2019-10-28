@@ -113,3 +113,30 @@ li {
         fill: $color-white;
     }
 }
+
+.footer {
+    &__item {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        &--dot {
+            list-style: disc;
+        }
+    }
+
+
+
+    &__link-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3d3741;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+    }
+    &__icon {
+        fill: #2f2933;
+        height: 1.8rem;
+    }
+}

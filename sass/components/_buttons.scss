@@ -54,4 +54,10 @@
         grid-column: 4 / 5;
         
     }
+    &--medium {
+        max-width: 40rem;
+    }
+    &--center {
+        margin: 0 auto;
+    }
 }

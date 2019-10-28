@@ -1,0 +1,26 @@
+.footer {
+    background-color: $color-purpure-dark;
+    background-image: url(../../assets/mountain.png);
+    background-repeat: no-repeat;
+    min-height: 25rem;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        
+    }
+    &__link {}
+    &__socials {}
+    &__icon {}
+    &__rights {
+    }
+}
